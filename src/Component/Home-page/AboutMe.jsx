@@ -49,22 +49,11 @@ export default function AboutMe() {
         </div>
 
         {/* details about me */}
-        {/* <div className="max-w-[443px] mx-auto pb-8 grid grid-cols-2 gap-4">
-        {qualification.map((item, index) => (
-          <div key={index} className=" border-4 border-black last:">
-            <span className="flex justify-start items-center space-x-2">
-              <img src={item.icon} alt="" />
-              <h3>{item.title}</h3>
-            </span>
-            <p>{item.details}</p>
-          </div>
-        ))}
-      </div> */}
         <div className="pb-8 grid grid-cols-2">
           {qualification.map((item, index) => (
             <div
               key={index}
-              className={`max-w-[516px] max-h-[177px] mx-auto ${
+              className={`max-w-[516px] max-h-[177px] mx-auto overflow-hidden ${
                 index === qualification.length - 1
                   ? "col-span-2 justify-self-center w-1/2 pt-8"
                   : ""
@@ -78,6 +67,7 @@ export default function AboutMe() {
             </div>
           ))}
         </div>
+        {/* Separator */}
         <div className="py-16 flex justify-center items-center">
           <img src="/Separator.png" alt="" />
         </div>

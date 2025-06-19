@@ -5,7 +5,7 @@ export default function Itberries() {
   return (
     <>
       <div className="max-w-[1920px] max-h-[313px] mx-auto">
-        <div className="bg-[#1D1D1D] text-white flex justify-between items-center lg:overflow-hidden">
+        <div className="bg-[#1D1D1D] text-white lg:flex justify-between items-center overflow-hidden">
           <div className="w-full p-6">
             <h2>IT BERRIES</h2>
             <p className="pt-4 text-base">

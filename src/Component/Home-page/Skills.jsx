@@ -88,7 +88,7 @@ export default function Skills() {
               <div className="py-12">
                 <h2 className="text-3xl font-bold">{item.catagory}</h2>
               </div>
-              <div className="grid grid-cols-4 gap-y-5">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 ">
                 {item.skill.map((skillIcon, list) => (
                   <div className="" key={list}>
                     <div className="">

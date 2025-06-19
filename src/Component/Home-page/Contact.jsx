@@ -20,7 +20,7 @@ export default function Contact() {
           <img src="/Separator.png" alt="" />
         </div>
         {/* Contact form */}
-        <div className="max-w-[609px] mx-auto">
+        <div className="px-20">
           <form className="space-y-6">
             <input
               className="block border-b-4 border-l-4 border-black w-full outline-none p-2"
