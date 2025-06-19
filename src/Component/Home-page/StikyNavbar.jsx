@@ -23,15 +23,11 @@ export default function StikyNavbar() {
   return (
     <>
       <div
-        className={`w-full fixed bg-black text-white transition-transform duration-200 z-10 ${
+        className={`max-w-[1920px] mx-auto left-0 right-0 py-2 fixed bg-black text-white transition-transform duration-200 z-10 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div
-        // className={`w-full ${
-        //   showNavbar ? "max-w-[1920px] mx-auto" : " "
-        // } transition-all duration-200`}
-        >
+        <div className="w-full">
           <NavItems />
         </div>
       </div>
