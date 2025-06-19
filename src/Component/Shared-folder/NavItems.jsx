@@ -3,17 +3,17 @@ const navContain = ["About me", "Skills", "Portfolio", "Contact Me"];
 
 export default function navbar() {
   return (
-    <div className="">
+    <nav className="">
       <ul className=" flex justify-end items-center space-x-8 pr-10">
         {navContain.map((item, index) => (
           <li key={index}>
-            <a className="text-lg font-bold" href="#">
+            <a className="text-lg font-bold text-white" href="#">
               {item}
             </a>
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }
 

@@ -1,13 +1,3 @@
-// import React from "react";
-// import NavItems from "../Shared-folder/NavItems";
-// export default function StikyNavbar() {
-//   return (
-//     <div className="bg-black text-white fixed w-full">
-//       <NavItems />
-//     </div>
-//   );
-// }
-
 import React, { useState, useEffect } from "react";
 import NavItems from "../Shared-folder/NavItems";
 
@@ -38,9 +28,9 @@ export default function StikyNavbar() {
         }`}
       >
         <div
-          className={`w-full ${
-            showNavbar ? "max-w-[1920px] mx-auto px-4" : ""
-          } transition-all duration-200`}
+        // className={`w-full ${
+        //   showNavbar ? "max-w-[1920px] mx-auto" : " "
+        // } transition-all duration-200`}
         >
           <NavItems />
         </div>
