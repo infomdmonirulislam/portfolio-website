@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         bannerImage: "url('/hero-background.png')",
         portfolioImage: "url('/portfolio-bg-image.png')",
+        mobileBgHeroImage: "url('/mobile-bg-hero-image.png')",
       },
     },
   },
