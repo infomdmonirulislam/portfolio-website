@@ -12,9 +12,9 @@ export default function Hero() {
     <>
       <div className="max-w-[1920px]  mx-auto">
         <div className="bg-bannerImage bg-no-repeat bg-cover">
-          <div className="px-10 pt-3">
+          {/* <div className="px-10 pt-3">
             <Header />
-          </div>
+          </div> */}
           <div className="sm:flex justify-between items-center overflow-hidden">
             {/* left side */}
             <div className="w-full pl-10">
