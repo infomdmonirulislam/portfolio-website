@@ -23,7 +23,7 @@ export default function StikyNavbar() {
   return (
     <>
       <div
-        className={`max-w-[1920px] mx-auto left-0 right-0 py-2 fixed bg-black text-white transition-transform duration-200 z-10 ${
+        className={`md:max-w-[1920px] mx-auto top-0 left-0 right-0 py-2 pr-5 fixed bg-black text-white transition-transform duration-200 z-10 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
       >

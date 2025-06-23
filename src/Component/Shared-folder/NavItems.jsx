@@ -4,7 +4,7 @@ const navContain = ["About me", "Skills", "Portfolio", "Contact Me"];
 export default function navbar() {
   return (
     <nav className="">
-      <ul className="block md:flex justify-end items-center gap-4">
+      <ul className="md:flex justify-end items-center gap-4">
         {navContain.map((item, index) => (
           <li key={index} className="">
             <a className="text-lg font-bold text-white" href="#">

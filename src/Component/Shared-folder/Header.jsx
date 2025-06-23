@@ -2,11 +2,15 @@ import React from "react";
 import HomeIcon from "../IconLibrary/HomeIcon";
 import NavItems from "../Shared-folder/NavItems";
 import Sidebar from "../Home-page/Sidebar";
+import StikyNavbar from "../Home-page/StikyNavbar";
 
 export default function Header() {
   return (
-    <header>
-      <div className="md:max-w-[1920px] mx-auto flex justify-between items-center">
+    <header className="md:max-w-[1920px] mx-auto">
+      <div className="hidden md:block">
+        <StikyNavbar />
+      </div>
+      <div className="md:flex justify-between items-center">
         <div>
           <HomeIcon />
         </div>
