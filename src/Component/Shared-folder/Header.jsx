@@ -1,39 +1,16 @@
-// import React from "react";
-// import HomeIcon from "../IconLibrary/HomeIcon";
-// import NavItems from "../Shared-folder/NavItems";
-// import Sidebar from "../Home-page/Sidebar";
-// import StikyNavbar from "../Home-page/StikyNavbar";
-
-// export default function Header() {
-//   return (
-//     <header className="md:max-w-[1920px] mx-auto">
-//       <div className="hidden md:block">
-//         <StikyNavbar />
-//       </div>
-//       <div className="hidden md:flex justify-between items-center p-4">
-//         <div>
-//           <HomeIcon />
-//         </div>
-//         <div className="">
-//           <NavItems />
-//         </div>
-//       </div>
-//       <div className="md:hidden">
-//         <Sidebar />
-//       </div>
-//     </header>
-//   );
-// }
 import React, { useState } from "react";
 import HomeIcon from "../IconLibrary/HomeIcon";
 import NavItems from "../Shared-folder/NavItems";
 import StikyNavbar from "../Home-page/StikyNavbar";
+import Hambargarmenu from "../IconLibrary/Hambargarmenu";
+import Crossbutton from "../IconLibrary/Crossbutton";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const hambargarIcon = Hambargarmenu;
+  const crossbuttonIcons = Crossbutton;
   return (
-    <header className="bg-red-300 md:max-w-[1920px] mx-auto">
+    <header className="max-w-[1920px] mx-auto">
       {/* Desktop Navbar */}
       <div className="hidden md:block">
         <StikyNavbar />
@@ -49,20 +26,25 @@ export default function Header() {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="md:hidden p-4 flex justify-between items-center">
-        <HomeIcon />
-        <button
-          onClick={() => setIsNavOpen(!isNavOpen)}
-          className="text-2xl font-bold"
-        >
-          {isNavOpen ? "✖" : "☰"} {/* Cross or Hamburger icon */}
-        </button>
+      <div className="p-4 flex justify-between items-center bg-black md:hidden">
+        <div>
+          <HomeIcon />
+        </div>
+        <div>
+          <button onClick={() => setIsNavOpen(!isNavOpen)}>
+            {isNavOpen
+              ? React.createElement(crossbuttonIcons)
+              : React.createElement(hambargarIcon)}
+          </button>
+        </div>
       </div>
 
       {/* Mobile NavItems - shown only if isNavOpen is true */}
       {isNavOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <NavItems />
+        <div className="w-full h-screen bg-mobileBgHeroImage bg-no-repeat bg-cover border-t-2">
+          <div className="text-center pt-32">
+            <NavItems />
+          </div>
         </div>
       )}
     </header>
