@@ -9,24 +9,24 @@ const icons = [EmailIcon, GithubIcon, LinkedinIcon];
 export default function Hero() {
   return (
     <>
-      <div className="max-w-[1920px]  mx-auto">
-        <div className="md:bg-bannerImage bg-no-repeat bg-cover">
-          <div className="flex flex-col-reverse md:flex-row justify-between items-center ">
+      <div className="">
+        <div className="bg-black md:bg-bannerImage bg-no-repeat bg-cover">
+          <div className="max-w-[1020px] mx-auto flex flex-col-reverse md:flex-row justify-between items-center pt-14">
             {/* left side */}
-            <div className="w-full p-4 bg-[#C4C4C4] flex justify-between items-center md:block md:bg-transparent md:pl-10">
-              <div className="pb-7 pl-3">
-                <h2 className="font-bold sm:text-base md:text-4xl pl-[2px]">
+            <div className="w-full bg-[#C4C4C4] flex justify-between items-center md:block md:bg-transparent">
+              <div className="pb-7">
+                <h2 className="font-bold sm:text-base md:text-4xl pb-4">
                   Hi, I am
                 </h2>
-                <h1 className="font-extrabold sm:text-4xl md:text-7xl">
+                <h1 className="font-extrabold sm:text-4xl md:text-6xl">
                   MD MONIRUL ISLAM
                 </h1>
-                <p className="font-extrabold sm:text-xs md:text-2xl">
+                <p className="sm:text-xs md:text-2xl text-[#909090] pt-1 font-bold">
                   Front-end Developer
                 </p>
               </div>
               {/* icons */}
-              <div className="md:pl-3">
+              <div className="">
                 <ul className="md:flex justify-start items-center gap-4">
                   {icons.map((IconComponent, index) => (
                     <li key={index} className="py-1 md:py-0">
@@ -41,12 +41,12 @@ export default function Hero() {
             </div>
 
             {/* right side */}
-            <div className="w-full bg-black">
-              <div className="md:px-4 pt-4">
+            <div className="w-full">
+              <div className="">
                 <img
                   src="src/assets/Image-Gallery/image 17.png"
                   alt="tamag"
-                  className=""
+                  className="md:ml-6"
                 />
               </div>
             </div>

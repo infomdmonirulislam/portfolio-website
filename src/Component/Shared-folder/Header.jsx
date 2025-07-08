@@ -10,13 +10,13 @@ export default function Header() {
   const hambargarIcon = Hambargarmenu;
   const crossbuttonIcons = Crossbutton;
   return (
-    <header className="max-w-[1920px] mx-auto">
+    <header className="max-w-[1020px] mx-auto">
       {/* Desktop Navbar */}
       <div className="hidden md:block">
         <StikyNavbar />
       </div>
 
-      <div className="hidden md:flex justify-between items-center p-4">
+      <div className="hidden md:flex justify-between items-center py-4">
         <div>
           <HomeIcon />
         </div>

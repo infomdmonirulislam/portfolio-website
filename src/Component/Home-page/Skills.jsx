@@ -74,21 +74,21 @@ const skillSets = [
 
 export default function Skills() {
   return (
-    <div className="max-w-[1920px] mx-auto bg-[#C4C4C4]">
-      <span className="flex justify-center items-center py-16">
+    <div className="max-w-[1920px] mx-auto bg-[#C4C4C4] px-4">
+      <span className="flex justify-center items-center pt-16 sm:pb-6 md:pb-10">
         <h2 className="text-center inline-block border-4 border-black py-2 px-8 text-3xl font-bold">
           Skills
         </h2>
       </span>
 
       <div>
-        <div className="max-w-[1020px] mx-auto pb-10">
+        <div className="max-w-[1020px] h-auto mx-auto pb-10">
           {skillSets.map((item, index) => (
             <div key={index}>
               <div className="py-12">
                 <h2 className="text-3xl font-bold">{item.catagory}</h2>
               </div>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 ">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-y-5 ">
                 {item.skill.map((skillIcon, list) => (
                   <div className="" key={list}>
                     <div className="">

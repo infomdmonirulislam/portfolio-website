@@ -24,7 +24,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className="max-w-[1920px] mx-auto bg-[#D7D7D7]">
+      <div className="max-w-[1920px] mx-auto bg-[#D7D7D7] px-5">
         <div className="pt-12">
           <span className=" flex justify-center items-center">
             <h2 className="text-center inline-block border-4 border-black py-2 px-8 text-3xl font-bold">
@@ -43,17 +43,17 @@ export default function AboutMe() {
               EXPLORE
             </p>
           </span>
-          <div className="py-16 flex justify-center items-center">
+          <div className="pt-16 pb-8 flex justify-center items-center">
             <img src="/Separator.png" alt="" />
           </div>
         </div>
 
         {/* details about me */}
-        <div className="pb-8 grid grid-cols-2">
+        <div className="sm:pb-6 md:grid grid-cols-2 pb-8">
           {qualification.map((item, index) => (
             <div
               key={index}
-              className={`max-w-[516px] max-h-[177px] mx-auto overflow-hidden ${
+              className={`pt-3 max-w-[516px] max-h-[177px] mx-auto ${
                 index === qualification.length - 1
                   ? "col-span-2 justify-self-center w-1/2 pt-8"
                   : ""
@@ -63,7 +63,7 @@ export default function AboutMe() {
                 <img src={item.icon} alt="" />
                 <h3 className="text-xl font-bold">{item.title}</h3>
               </span>
-              <p>{item.details}</p>
+              <p className="sm:pl-2 md:pl-0">{item.details}</p>
             </div>
           ))}
         </div>

@@ -5,7 +5,7 @@ export default function Itberries() {
   return (
     <>
       <div className="max-w-[1920px] h-auto mx-auto">
-        <div className="bg-[#1D1D1D] text-white flex flex-col-reverse md:flex-row justify-between items-center overflow-hidden">
+        <div className="bg-[#1D1D1D] text-white md:flex justify-between items-center overflow-hidden">
           <div className="w-full text-center md:text-start p-4 ">
             <h2>IT BERRIES</h2>
             <p className="pt-2 md:pt-4 text-base">
@@ -22,7 +22,7 @@ export default function Itberries() {
           </div>
 
           <div className="w-full md:w-1/3 relative">
-            <span className="md:absolute -top-[240px] -rotate-[-23.89°]">
+            <span className="flex justify-center items-center absolute md:-top-[240px] -rotate-[-23.89°]">
               <ItbIcon />
             </span>
           </div>

@@ -9,7 +9,7 @@ const navContain = ["About me", "Skills", "Portfolio", "Contact Me"];
 export default function navbar() {
   return (
     <nav className="">
-      <ul className="md:flex justify-end items-center gap-4">
+      <ul className="md:flex justify-end items-center gap-8">
         {navContain.map((item, index) => (
           <li key={index} className="py-3 text-white ">
             <a className="text-lg font-bold md:py-0 " href="#">
